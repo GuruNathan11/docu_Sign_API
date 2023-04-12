@@ -161,7 +161,7 @@ exports.createEnvelope = async (documentUrl, email, name) => {
   const response = await axios.get(documentUrl, { responseType: 'arraybuffer' });
   const documentBase64 = Buffer.from(response.data, 'binary').toString('base64');
 
-  console.log("Base64",documentBase64);
+//   console.log("Base64",documentBase64);
 
   // Define the request payload
   const payload = {
